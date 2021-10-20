@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset="utf-8" />
+<title>Demo for Source Code Submission API</title>
+<script type="module" src="../dist/main.js"></script>
+</head>
+<body>
+<br />
+<table>
+<tr>
+<td>contractaddress:</td>
+<td><input type="text" id="contractaddress" size="40" placeholder="i.e 0x....."></td>
+</tr>
+<tr>
+<td>sourceCode:</td>
+<td><textarea id="sourceCode" cols="50" rows="5"></textarea></td>
+</tr>
+<tr>
+<td>contractname:</td>
+<td><input type="text" id="contractname" size="40" value=""> 
+</tr>
+<tr>
+<td>compilerversion:</td>
+<td><input type="text" id="compilerversion" size="30" placeholder="i.e v0.4.3"> 
+</tr>
+</tr>
+</table>
+<br />
+<button type="button" id="btnpost" onclick="verify_contract_code()">HTTP Post</button>
+</body>
+</html>
